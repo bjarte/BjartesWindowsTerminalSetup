@@ -44,7 +44,10 @@ https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerl
 
 NB! Make sure the names of each profile matches what you have in Windows Terminal's `settings.json`. For example, your installation of Ubuntu might just be called "Ubuntu".
 
-Create a bat file:
+Create a bat file, for example `start-windows-terminal.bat`.
+
+The following example opens Windows Terminal with 3 tabs (the last tab with two panes) and gives focus to the first tab after startup:
+
 ``` batch
 :: This is really just a single line command. Split up with ^ for readability
 start "" wt -p "Command Prompt"; ^
@@ -53,3 +56,5 @@ new-tab -p "Ubuntu-20.04" -d C:\Projects\Project2\Subdir1; ^
 split-pane -p "Ubuntu-20.04" -d C:\Projects\Project2\Subdir2; ^
 focus-tab -t 0
 ```
+
+Add a shortcut to this batch file in the Start Menu for easy access.
