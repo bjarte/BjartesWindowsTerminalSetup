@@ -1,5 +1,11 @@
 # My setup for Windows Terminal
 
+I have a setup for Windows Terminal that looks like the image below, with multiple tabs and panes with predefined startup directories. The settings are also synched across multiple computers.
+
+![alt text](https://raw.githubusercontent.com/bjarte/BjartesWindowsTerminalSetup/master/example-of-end-result.png "Example of Windows Terminal with three tabs and two tabs")
+
+To recreate this setup, follow the steps below.
+
 ## Install Windows Terminal
 
 With chocolatey:
@@ -40,11 +46,13 @@ Open PowerShell as Administrator:
 Follow this guide:
 https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx
 
-## Create shortcut with several tabs open
+## Create shortcut for Terminal with several tabs open
+
+Windows Terminal doesn't (yet) have a way to set up multiple tabs and startup directories in `settings.json`, so we need to create a batch file with all the necessary settings.
 
 NB! Make sure the names of each profile matches what you have in Windows Terminal's `settings.json`. For example, your installation of Ubuntu might just be called "Ubuntu".
 
-Create a bat file, for example `start-windows-terminal.bat`.
+Create a batch file, for example `start-windows-terminal.bat`.
 
 The following example opens Windows Terminal with 3 tabs (the last tab with two panes) and gives focus to the first tab after startup:
 
