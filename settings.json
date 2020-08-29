@@ -6,8 +6,8 @@
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
   "confirmCloseAllTabs": false,
-  "initialCols": 175,
-  "initialRows": 60,
+  "initialCols": 120,
+  "initialRows": 30,
   
   "profiles": [
 
