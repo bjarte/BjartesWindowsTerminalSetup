@@ -1,14 +1,12 @@
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 {
-    "$schema": "https://aka.ms/terminal-profiles-schema",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
   "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
 
   // Launch Settings
   "initialCols": 120,
   "initialRows": 30,
-
-  //"$schema": "https://aka.ms/terminal-profiles-schema",
   
   // Miscellaneous
   "confirmCloseAllTabs": false,
@@ -19,7 +17,6 @@
       "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
       "name": "Windows PowerShell",
       "fontFace": "Cascadia Code PL",
-	  "fontSize": 10,
       "colorScheme": "Solarized Dark",
       "commandline": "powershell.exe"
     },
@@ -27,7 +24,6 @@
       "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
       "name": "Command Prompt",
       "fontFace": "Cascadia Code PL",
-	  "fontSize": 10,
       "colorScheme": "Solarized Dark",
       "commandline": "cmd.exe"
     },
@@ -36,7 +32,6 @@
       "hidden": false,
       "name": "Ubuntu-20.04",
       "fontFace": "Cascadia Code PL",
-	  "fontSize": 10,
       "colorScheme": "Solarized Dark",
       "source": "Windows.Terminal.Wsl"
     },
@@ -45,7 +40,6 @@
       "hidden": true,
       "name": "Azure Cloud Shell",
       "fontFace": "Cascadia Code PL",
-	  "fontSize": 10,
       "colorScheme": "Solarized Dark",
       "source": "Windows.Terminal.Azure"
     },
@@ -54,7 +48,6 @@
 	  "hidden": false,
 	  "name": "PowerShell 7",
 	  "fontFace": "Cascadia Code PL",
-	  "fontSize": 10,
 	  "colorScheme": "Solarized Dark",
 	  "source": "Windows.Terminal.PowershellCore"
     }
