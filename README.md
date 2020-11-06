@@ -29,14 +29,14 @@ With chocolatey:
 
 1. Copy Windows Terminal's `settings.json` to a synchronized directory, for example under version control or in Dropbox.
 
-Open PowerShell as Administrator:
+2. Open PowerShell as Administrator.
 
-2. Delete existing settings directory:
+3. Delete existing settings directory:
 ``` PowerShell
 > Remove-Item -Path $Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState -Force –Recurse
 ```
 
-3. Create symlink to synchronized directory:
+4. Create symlink to synchronized directory:
 ``` PowerShell
 > New-Item -ItemType SymbolicLink -Path "$Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState" -Target "C:\Projects\BjartesWindowsTerminalSetup"
 ```
