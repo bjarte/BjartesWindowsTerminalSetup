@@ -46,11 +46,13 @@ Open PowerShell as Administrator:
 Follow this guide:
 https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx
 
+💡 I disabled Powerline and oh-my-posh after a while, because it makes the terminal really slow, especially in the Linux/WSL tab.
+
 ## Create shortcut for Terminal with several tabs open
 
 Windows Terminal doesn't (yet) have a way to set up multiple tabs and startup directories in `settings.json`, so we need to create a batch file with all the necessary settings.
 
-NB! Make sure the names of each profile matches what you have in Windows Terminal's `settings.json`. For example, your installation of Ubuntu might just be called "Ubuntu".
+🚨 Make sure the names of each profile matches what you have in Windows Terminal's `settings.json`. For example, your installation of Ubuntu might just be called "Ubuntu".
 
 Create a batch file, for example `start-windows-terminal.bat`.
 
@@ -66,3 +68,5 @@ focus-tab -t 0
 ```
 
 Add a shortcut to this batch file in the Start Menu for easy access.
+
+💡 If you'd like, you can set the shortcut to always open Windows Terminal as an administrator.
