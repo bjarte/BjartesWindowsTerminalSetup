@@ -46,7 +46,7 @@ With chocolatey:
 Follow this guide:
 https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx
 
-💡 I disabled Powerline and oh-my-posh after a while, because it makes the terminal really slow, especially in the Linux/WSL tab.
+💡 I disabled Powerline and oh-my-posh after a while, because it makes the terminal quite slow, especially in the Linux/WSL tab.
 
 ## Create shortcut for Terminal with several tabs open
 
