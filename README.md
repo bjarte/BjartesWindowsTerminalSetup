@@ -24,6 +24,18 @@ With chocolatey:
 ``` PowerShell
 > cinst cascadiafonts
 ```
+To use the Cascadia font in Windows Terminal, open `settings.json` and set your profiles' font to *Cascadia Code PL*:
+``` JavaScript
+"profiles": [
+  {
+    "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "name": "Windows PowerShell",
+    "fontFace": "Cascadia Code PL",
+    "colorScheme": "Solarized Dark",
+    "commandline": "powershell.exe"
+  }
+]
+```
 
 ## Set up synchronized settings
 
