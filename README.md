@@ -62,6 +62,7 @@ https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerl
 ``` PowerShell
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
+Install-Module npm-completion -Scope CurrentUser
 ```
 
 2. Set up PowerShell profile:
@@ -73,6 +74,7 @@ Add the following to your profile:
 ``` PowerShell
 Import-Module posh-git
 Import-Module oh-my-posh
+Import-Module npm-completion
 Set-PoshPrompt -Theme Spaceship
 ```
 💡 Posh-git requires a _powerline_ font, this is what is used to add for example branch symbols to the command line. Cascadia Code PL is a powerline font.
