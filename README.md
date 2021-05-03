@@ -77,6 +77,8 @@ Set-PoshPrompt -Theme Spaceship
 ```
 💡 Posh-git requires a _powerline_ font, this is what is used to add for example branch symbols to the command line. Cascadia Code PL is a powerline font.
 
+🚨 The guide above is just for PowerShell. Basic command line (cmd.exe) doesn't have a posh setup, and if you want to posh up your Ubuntu terminal, follow Scott Hanselman's guide linked above.
+
 ## Create shortcut for Terminal with several tabs open
 
 Windows Terminal doesn't (yet) have a way to set up multiple tabs and startup directories in `settings.json`, so we need to create a batch file with all the necessary settings.
