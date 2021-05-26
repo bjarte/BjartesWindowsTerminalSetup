@@ -10,7 +10,7 @@ To recreate this setup, follow the steps below.
 
 With chocolatey:
 ``` PowerShell
-> cinst microsoft-windows-terminal
+cinst microsoft-windows-terminal
 ```
 
 ## Install WSL2 and Ubuntu 20.04
@@ -22,7 +22,7 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 With chocolatey:
 ``` PowerShell
-> cinst cascadiafonts
+cinst cascadiafonts
 ```
 To use the Cascadia font in Windows Terminal, open `settings.json` and set your profiles' font to *Cascadia Code PL*:
 ``` JavaScript
@@ -45,20 +45,41 @@ To use the Cascadia font in Windows Terminal, open `settings.json` and set your 
 
 3. Delete existing settings directory:
 ``` PowerShell
-> Remove-Item -Path $Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState -Force –Recurse
+Remove-Item -Path $Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState -Force –Recurse
 ```
 
 4. Create symlink to synchronized directory:
 ``` PowerShell
-> New-Item -ItemType SymbolicLink -Path "$Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState" -Target "C:\Projects\BjartesWindowsTerminalSetup"
+New-Item -ItemType SymbolicLink -Path "$Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState" -Target "C:\Projects\BjartesWindowsTerminalSetup"
 ```
 
 ## Set up pretty terminal with Powerline and oh-my-posh
 
-Follow this guide:
+Based on this guide:
 https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx
 
-💡 I disabled Powerline and oh-my-posh after a while, because it makes the terminal quite slow, especially in the Linux/WSL tab.
+1. Install PowerShell modules:
+``` PowerShell
+Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+Install-Module npm-completion -Scope CurrentUser
+```
+
+2. Set up PowerShell profile:
+``` PowerShell
+notepad $profile
+```
+
+Add the following to your profile:
+``` PowerShell
+Import-Module posh-git
+Import-Module oh-my-posh
+Import-Module npm-completion
+Set-PoshPrompt -Theme Spaceship
+```
+💡 Posh-git requires a _powerline_ font, this is what is used to add for example branch symbols to the command line. Cascadia Code PL is a powerline font.
+
+🚨 The guide above is just for PowerShell. Basic command line (cmd.exe) doesn't have a posh setup, and if you want to posh up your Ubuntu terminal, follow Scott Hanselman's guide linked above.
 
 ## Create shortcut for Terminal with several tabs open
 
