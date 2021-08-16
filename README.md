@@ -1,6 +1,10 @@
 # My setup for Windows Terminal
 
-I have a setup for Windows Terminal that looks like the image below, with multiple tabs and panes with predefined startup directories. The settings are also synched across multiple computers.
+I have a setup for Windows Terminal that looks like the image below. What is different from a standard setup, is the following:
+- Multiple tabs and panes with predefined startup directories
+- Settings are synchronized across multiple computers
+- Git integration shows current branch
+- Cascadia font, which is made specifically for developers
 
 ![alt text](https://raw.githubusercontent.com/bjarte/BjartesWindowsTerminalSetup/master/example-of-end-result.png "Example of Windows Terminal with three tabs and two tabs")
 
@@ -29,9 +33,9 @@ To use the Cascadia font in Windows Terminal, open `settings.json` and set your 
 "profiles": [
   {
     "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-    "name": "Windows PowerShell",
-    "fontFace": "Cascadia Code PL",
-    "colorScheme": "Solarized Dark",
+    "name": "PowerShell",
+    "font": { face": "Cascadia Code PL" },
+    "colorScheme": "One Half Dark",
     "commandline": "powershell.exe"
   }
 ]
