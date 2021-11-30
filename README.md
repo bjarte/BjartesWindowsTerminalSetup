@@ -24,6 +24,11 @@ With chocolatey:
 ``` PowerShell
 cinst cascadiafonts
 ```
+
+Or find another nice one, like Caskaydia Cove here:
+https://www.nerdfonts.com/font-downloads
+
+
 To use the Cascadia font in Windows Terminal, open `settings.json` and set your profiles' font to *Cascadia Code PL*:
 ``` JavaScript
 "profiles": [
@@ -63,6 +68,7 @@ https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerl
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
 Install-Module npm-completion -Scope CurrentUser
+Install-Module Terminal-Icons -Scope CurrentUser
 ```
 
 2. Set up PowerShell profile:
@@ -75,8 +81,14 @@ Add the following to your profile:
 Import-Module posh-git
 Import-Module oh-my-posh
 Import-Module npm-completion
+Import-Module -Name Terminal-Icons
 Set-PoshPrompt -Theme Spaceship
 ```
+This is the for the theme Spaceship. You will find loads of other cool themes here:
+https://ohmyposh.dev/docs/themes
+
+Another favorite of mine is jandedobbeleer
+
 💡 Posh-git requires a _powerline_ font, this is what is used to add for example branch symbols to the command line. Cascadia Code PL is a powerline font.
 
 🚨 The guide above is just for PowerShell. Basic command line (cmd.exe) doesn't have a posh setup, and if you want to posh up your Ubuntu terminal, follow Scott Hanselman's guide linked above.
