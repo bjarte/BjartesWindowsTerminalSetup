@@ -33,13 +33,13 @@ Or find another nice one, like Caskaydia Cove here:
 https://www.nerdfonts.com/font-downloads
 
 
-To use the Cascadia font in Windows Terminal, open `settings.json` and set your profiles' font to *Cascadia Code PL*:
+To use the CaskaydiaCove font in Windows Terminal, open `settings.json` and set your profiles' font to *CaskaydiaCove NF*:
 ``` JavaScript
 "profiles": [
   {
     "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "name": "PowerShell",
-    "font": { face": "Cascadia Code PL" },
+    "font": { face": "CaskaydiaCove NF" },
     "colorScheme": "One Half Dark",
     "commandline": "powershell.exe"
   }
