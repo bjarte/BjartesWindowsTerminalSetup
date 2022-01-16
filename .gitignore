@@ -2,3 +2,5 @@
 *.lnk
 
 *.backup
+
+state.json
