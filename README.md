@@ -14,7 +14,7 @@ To recreate this setup, follow the steps below.
 
 With chocolatey:
 ``` PowerShell
-cinst microsoft-windows-terminal
+choco install microsoft-windows-terminal
 ```
 
 ## Install WSL2 and Ubuntu 20.04
@@ -26,7 +26,7 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 With chocolatey:
 ``` PowerShell
-cinst cascadiafonts
+choco install cascadiafonts
 ```
 
 Or find another nice one, like Caskaydia Cove here:
