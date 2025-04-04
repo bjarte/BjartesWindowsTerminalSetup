@@ -95,7 +95,7 @@ Add the following to your profile:
 Import-Module posh-git
 Import-Module npm-completion
 Import-Module -Name Terminal-Icons
-oh-my-posh init pwsh --config C:\Program Files (x86)\oh-my-posh\themes\spaceship.omp.json | Invoke-Expression
+oh-my-posh init pwsh --config "C:\Program Files (x86)\oh-my-posh\themes\spaceship.omp.json" | Invoke-Expression
 ```
 
 You can find loads of other cool themes here:
