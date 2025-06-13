@@ -131,3 +131,24 @@ focus-tab -t 0
 Add a shortcut to this batch file in the Start Menu for easy access.
 
 💡 If you'd like, you can set the shortcut to always open Windows Terminal as an administrator.
+
+## More useful tools and setup
+
+### WSL: Set up zsh as shell and add oh-my-posh
+
+```bash
+apt install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Use Volta in Windows and Linux to easily switch between versions of node
+
+```PowerShell
+choco install volta
+volta install node npm # Installs latest version of node and npm
+volta install node@20 npm@9 # Installs specific versions of node and npm
+```
+
+```bash
+curl https://get.volta.sh | bash
+```
