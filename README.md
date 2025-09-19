@@ -37,7 +37,7 @@ You can also change the font and colur scheme in Windows Terminal's settings.
 ``` JSON
 "profiles": [
   {
-    "font": { face": "CaskaydiaCove NF" },
+    "font": { "face": "CaskaydiaCove NF" },
     "colorScheme": "One Half Dark",
   }
 ]
@@ -180,4 +180,5 @@ volta install node@20 npm@9 # Installs specific versions of node and npm
 ```bash
 curl https://get.volta.sh | bash
 ```
+
 
