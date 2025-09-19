@@ -6,6 +6,7 @@ I have a setup for Windows Terminal that looks like the image below. What is dif
 - Settings are synchronized across multiple computers
 - Git integration shows current branch
 - CaskaydiaCove font, which is made specifically for developers
+- Oh My Posh or Starship for nice polish
 
 ![alt text](https://raw.githubusercontent.com/bjarte/BjartesWindowsTerminalSetup/master/example-of-end-result.png "Example of Windows Terminal with three tabs and two tabs")
 
@@ -60,12 +61,12 @@ Remove-Item -Path $Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8
 New-Item -ItemType SymbolicLink -Path "$Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState" -Target "C:\Projects\BjartesWindowsTerminalSetup"
 ```
 
-## Set up pretty terminal with Powerline and oh-my-posh
+## Set up pretty terminal with Powerline and Oh My Posh
 
 Based on this (old) guide:
 <https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx>
 
-And the oh-my-posh installation guide for Windows:
+And the Oh My Posh installation guide for Windows:
 
 <https://ohmyposh.dev/docs/installation/windows>
 
@@ -108,6 +109,33 @@ Another favorite of mine is [jandedobbeleer](https://github.com/JanDeDobbeleer/o
 🚨 The guide above is just for PowerShell. Basic command line (cmd.exe) doesn't have a posh setup, and if you want to posh up your Ubuntu terminal, follow oh-my-posh's Linux installation guide:
 
 <https://ohmyposh.dev/docs/installation/linux>
+
+## Set up pretty terminal with Starship
+
+Starship is a similar tool to Oh My Posh. It has a slightly easier setup, and is available for PowerShell, Linux terminal and also CMD (which Oh My Posh doesn't support).
+
+1. Install Starship
+
+``` PowerShell
+choco install starship
+```
+
+2. Set up PowerShell profile:
+
+``` PowerShell
+notepad $profile
+```
+
+Add the following to your profile:
+
+``` PowerShell
+Invoke-Expression (&starship init powershell)
+```
+
+You can find install instructions for other terminals like zsh in Linux or CMD on Windows here:
+
+<[https://ohmyposh.dev/docs/installation/linux](https://starship.rs)>
+
 
 ## Create shortcut for Terminal with several tabs open
 
@@ -152,3 +180,4 @@ volta install node@20 npm@9 # Installs specific versions of node and npm
 ```bash
 curl https://get.volta.sh | bash
 ```
+
