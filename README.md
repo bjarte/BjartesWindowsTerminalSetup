@@ -61,7 +61,7 @@ Remove-Item -Path $Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8
 New-Item -ItemType SymbolicLink -Path "$Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState" -Target "C:\Projects\BjartesWindowsTerminalSetup"
 ```
 
-## Set up pretty terminal with Powerline and Oh My Posh
+## Set up pretty terminal with Oh My Posh
 
 Based on this (old) guide:
 <https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx>
@@ -134,7 +134,7 @@ Invoke-Expression (&starship init powershell)
 
 You can find install instructions for other terminals like zsh in Linux or CMD on Windows here:
 
-<[https://ohmyposh.dev/docs/installation/linux](https://starship.rs)>
+<https://starship.rs>
 
 
 ## Create shortcut for Terminal with several tabs open
@@ -180,5 +180,6 @@ volta install node@20 npm@9 # Installs specific versions of node and npm
 ```bash
 curl https://get.volta.sh | bash
 ```
+
 
 
